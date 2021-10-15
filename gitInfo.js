@@ -10,7 +10,7 @@
 */
 
 //CODE HERE
-
+let gitDefinition = "git is a way to manage projects, and project versions. without having 1 billion files on your computer";
 //////////////////PROBLEM 2////////////////////
 /*
     Create a variable called 'gitHubDefinition'.  
@@ -18,7 +18,7 @@
 */
 
 //CODE HERE
-
+let gitHubDefinition = "github is a storage place where you can push git repositories from your computer to online. It makes it easier for teams to work on projects, and is a place where others can see your code";
 //////////////////PROBLEMS 3 - 8////////////////////
 /*
     For the next several problems you will be creating objects containing information about different git 
@@ -34,6 +34,10 @@
 */
 
 //CODE HERE
+let init = {
+    description: "creates a new repository... if one doesn't exist. in the current directory you are in",
+    code: "git init"
+};
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,7 +46,10 @@
 */
 
 //CODE HERE
-
+let clone = {
+    description: "clones a repository (copies a repository) (from a url, or flag) into your current working directory, or to another url, or location",
+    code: "git clone https://github.com/tbpatj/js-basics-1"
+};
 //////////////////PROBLEM 5////////////////////
 /*
     Create an object called 'status' with 'description' and 'code' properties 
@@ -50,7 +57,10 @@
 */
 
 //CODE HERE
-
+let status = {
+    description: "the status command tells you what has been added, or what files have been changed since the last commmit",
+    code: "git status"
+};
 //////////////////PROBLEM 6////////////////////
 /*
     Create an object called 'add' with 'description' and 'code' properties 
@@ -58,7 +68,10 @@
 */
 
 //CODE HERE
-
+let add = {
+    description: "adds a file to the current commit",
+    code: "git add gitInfo.js"
+};
 //////////////////PROBLEM 7////////////////////
 /*
     Create an object called 'commit' with 'description' and 'code' properties
@@ -66,7 +79,10 @@
 */
 
 //CODE HERE
-
+let commit = {
+    description: `creates a new "version" of your project, it saves what you have done, and files it accordingly`,
+    code: `git commit -m "just about to finish gitInfo.js"`
+};
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -75,3 +91,7 @@
 */
 
 //CODE HERE
+let push = {
+    description: `this sends all the stuff you have commited, to a another computer, or server, such as github`,
+    code:  `git push -u origin main` //or just git push if you have already pushed initially
+};
